@@ -28,6 +28,14 @@ public class EratosthenesPrimeSieve implements PrimeSieve{
 
     @Override
     public void printPrimes() {
+        for (int i = 2; i <= bound; i++) {
+            if (i == 2) {
+                System.out.print(i);
+            }
 
+            if (isPrime(i) && i > 2) {
+                System.out.print(", " + i);
+            }
+        }
     }
 }
